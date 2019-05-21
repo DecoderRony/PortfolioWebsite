@@ -16,6 +16,11 @@ body{
 	text-decoration: none;
 }
 
+#nav a{
+	text-decoration: none;
+}
+
+
 #main{
 	margin-left: 120px;
 }
