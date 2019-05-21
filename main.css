@@ -20,6 +20,14 @@ body{
 	text-decoration: none;
 }
 
+#myNavbar a:hover{
+	text-decoration: none;
+}
+
+#myNavbar a{
+	text-decoration: none;
+}
+
 
 #main{
 	margin-left: 120px;
