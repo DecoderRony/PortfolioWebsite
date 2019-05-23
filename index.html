@@ -7,10 +7,11 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
   <link rel="icon" type="image/x-icon" href="./images/code.jpg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 <body class="w3-black">
@@ -40,10 +41,10 @@
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off  w3-center w3-small" id="navb">
-    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
-    <a href="#contact-me" class="w3-bar-item w3-button " style="width:25% !important">CONTACT</a>
+    <a href="#home" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">SKILLS</a>
+    <a href="#contact-me" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
@@ -58,7 +59,7 @@
     <img src="./images/Arpit.jpg" class="w3-image" id="image">
 	</header>
 
-
+  
 <!--About Section -->
     
 	<div class="w3-content w3-text-white w3-padding-64" id="about">
@@ -77,15 +78,15 @@
     	<div id="skills-tab">
 		<h2 class="w3-padding-20 w3-text-white" id="skills">My Skills</h2>
 		<hr style="width: 240px" class="w3-opacity">
-		<p class="w3-wide w3-text-white">Photography</p>
+		<p class="w3-wide w3-text-white">Photography <span><i class="fa fa-camera w3-xlarge"></i></span></p>
 		<div class="w3-white w3-round-large">
 			<div class="w3-blue w3-round-large w3-center" style="height:25px;width: 70%"><strong>70%</strong></div>
         </div>
-        <p class="w3-wide w3-margin-top">Web Development</p>
+        <p class="w3-wide w3-margin-top">Web Development <span><i class="fa fa-html5 w3-xlarge"></i></span></p>
         <div class="w3-white w3-round-large">
         	<div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 45%"><strong>45%</strong></div>
         </div>
-        <p class="w3-wide w3-margin-top">C</p>
+        <p class="w3-wide w3-margin-top">C <i class="fab fa-cuttlefish"></i></p>
         <div class="w3-white w3-round-large">
         	<div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 20%"><strong>20%</strong></div>
         </div>
@@ -93,15 +94,15 @@
         <div class="w3-white w3-round-large">
         	<div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 35%"><strong>35%</strong></div>
         </div>
-        <p class="w3-wide w3-margin-top">Java</p>
+        <p class="w3-wide w3-margin-top">Java <i class="fa fa-java w3-xlarge"></i></p>
         <div class="w3-white w3-round-large">
         	<div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 15%"><strong>15%</strong></div>
         </div>
-        <p class="w3-wide w3-margin-top">Python</p>
+        <p class="w3-wide w3-margin-top">Python <i class="fab fa-python w3-xlarge"></i></p>
         <div class="w3-white w3-round-large">
         <div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 20%"><strong>20%</strong></div>
         </div>
-        <p class="w3-wide w3-margin-top">Php</p>
+        <p class="w3-wide w3-margin-top">Php <span><i class="fab fa-php w3-xlarge"></i></span></p>
         <div class="w3-white w3-round-large">
         <div class="w3-blue w3-round-large w3-center" style="height: 25px;width: 40%"><strong>40%</strong></div>
         </div>
@@ -146,12 +147,16 @@
    
 </div>
 
+<div class="w3-display-bottomright" style="position:fixed;" id="bttm_scrll">
+  <a href="#home"><i class="fa fa-angle-double-up w3-xxlarge w3-padding-large w3-text-white"></i></a>
+</div>
+
 <footer class="w3-center w3-text-white" style="padding-top: 10px;">Deve <i class="fa fa-heart w3-text-red"></i> ed by Arpit</footer>
 
 <!--JQUERY FOR SCROLL ANIMATION-->
 <script>
   $(function() {
-$("#nav a, #myNavbar a").click(function() {
+$("#nav a, #myNavbar a, #bttm_scrll a").click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
