@@ -1,4 +1,4 @@
-/*@media only screen and (min-width: 300px) and (max-width: 359px){
+@media only screen and (min-width: 300px) and (max-width: 359px){
     .lds-ring div {
         margin-top: 320%;
     }
@@ -49,4 +49,4 @@
 @media only screen and (min-width: 741px) and (max-width: 767px)
 {
     
-}*/
+}
