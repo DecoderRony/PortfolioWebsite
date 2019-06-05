@@ -1,0 +1,52 @@
+/*@media only screen and (min-width: 300px) and (max-width: 359px){
+    .lds-ring div {
+        margin-top: 320%;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 400px){
+    .lds-ring div {
+        margin-top: 350%;
+        margin-left: -4rem;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 567px){
+    .lds-ring div {
+        margin-top: 350%;
+        margin-left: -4rem;
+    }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 600px){
+    .lds-ring div {
+        margin-top: 150%;
+        margin-left: -4rem;
+    }
+}
+
+@media only screen and (min-width: 605px) and (max-width: 638px){
+    .lds-ring div {
+        margin-top: 150%;
+        margin-left: -4rem;
+    }
+}
+
+@media only screen and (min-width: 639px) and (max-width: 670px){
+.lds-ring div {
+    margin-top: 180%;
+    margin-left: -4rem;
+}
+}
+
+@media only screen and (min-width: 671px) and (max-width: 740px){
+    .lds-ring div {
+        margin-top: 230%;
+        margin-left: -4rem;
+    }
+    }
+
+@media only screen and (min-width: 741px) and (max-width: 767px)
+{
+    
+}*/
